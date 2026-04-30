@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+</head>
+
+<body>
+
+<h1>
+Recommendations for User {{ user_id }}
+</h1>
+
+{% for p in products %}
+
+<div>
+
+    <p>
+        Product ID: {{ p[0] }}
+    </p>
+
+    <p>
+        Category: {{ p[1] }}
+    </p>
+
+    <p>
+        Price: {{ p[2] }}
+    </p>
+
+</div>
+
+<hr>
+
+{% endfor %}
+<a href="/">Back</a>
+
+</body>
+</html>

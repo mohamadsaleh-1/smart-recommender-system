@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+<h2>click to get the user 25 Recommendations</h2>
+
+<a href="/Recommendations/25">
+    <button>
+        Get Recommendations for User 25
+    </button>
+</a>
+<h1>All Products</h1>
+
+{% for p in products %}
+<div class="card">
+    <p>Product ID: {{ p[0] }}</p>
+    <p>Category: {{ p[1] }}</p>
+    <p>Price: {{ p[2] }}</p>
+</div>
+{% endfor %}
+
+
+</body>
+</html>
