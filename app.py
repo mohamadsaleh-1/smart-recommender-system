@@ -52,7 +52,7 @@ def recommend(user_id):
     )
 
     return render_template(
-        "Recommendations.html",
+        "recommendations.html",
         products=products,
         user_id=user_id
     )
